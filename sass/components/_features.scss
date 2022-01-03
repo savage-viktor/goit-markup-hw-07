@@ -1,0 +1,33 @@
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 90px) / 4);
+}
+
+.feature-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-icon {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.feature-title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.feature-discription {
+  color: var(--color-secondary-text);
+  line-height: 1.71;
+}
