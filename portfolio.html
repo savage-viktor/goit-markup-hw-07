@@ -22,7 +22,9 @@
     <header>
       <div class="page-header container">
         <nav class="site-nav">
-          <a class="logo site-nav__logo" href="./index.html"><span>Web</span>Studio</a>
+          <a class="page-header__logo logo" href="./index.html"
+            >Web<span class="logo__second">Studio</span>
+          </a>
           <ul class="site-nav__list">
             <li class="site-nav__item">
               <a class="site-nav__link" href="./index.html">Студия</a>
@@ -226,43 +228,50 @@
     </main>
 
     <!-- Футер -->
-    <footer>
-      <div cla    <footer>
-      <div class="container">
-        <div class="div-contacts">
-          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-          <address>г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="list contacts-footer">
-            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <footer class="page-footer">
+      <div class="page-footer__box container">
+        <div class="page-footer__contact-box">
+          <a class="page-footer__logo logo" href="./index.html"
+            >Web<span class="logo__second--inversed">Studio</span>
+          </a>
+          <address class="page-footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+          <ul class="page-footer__contacts-list">
+            <li class="page-footer__contact-item">
+              <a class="page-footer__contact-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="page-footer__contact-item">
+              <a class="page-footer__contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </div>
         <div class="follow-us">
-          <h3 class="follow-us-title">Присоединяйтесь</h3>
-          <ul class="list">
-            <li>
-              <a class="icon" href="">
+          <h3 class="follow-us__title">Присоединяйтесь</h3>
+          <ul class="follow-us__list">
+            <li class="follow-us__item">
+              <a class="follow-us__icon" href="">
                 <svg width="20px" height="20px">
                   <use href="./images/icons_sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="follow-us__item">
+              <a class="follow-us__icon" href="">
                 <svg width="20px" height="20px">
                   <use href="./images/icons_sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="follow-us__item">
+              <a class="follow-us__icon" href="">
                 <svg width="20px" height="20px">
                   <use href="./images/icons_sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="follow-us__item">
+              <a class="follow-us__icon" href="">
                 <svg width="20px" height="20px">
                   <use href="./images/icons_sprite.svg#icon-linkedin"></use>
                 </svg>
@@ -270,11 +279,21 @@
             </li>
           </ul>
         </div>
-        <div class="follow-us subscribe">
-          <h3 class="follow-us-title">Подпишитесь на рассылку</h3>
-          <form class="form-subscribe">
-            <input type="email" name="email" placeholder="Email" />
-            <button class="submit-button" type="submit">Подписаться</button>
+        <div class="follow-us follow-us--positioned-right">
+          <h3 class="follow-us__title">Подпишитесь на рассылку</h3>
+          <form class="form">
+            <input
+              class="form__input-field follow-us__input-field"
+              type="email"
+              name="email"
+              placeholder="Email"
+            />
+            <button class="submit-button follow-us__submit-button" type="submit">
+              Подписаться
+              <svg class="submit-button__icon" width="24px" height="24px">
+                <use href="./images/icons_sprite.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>

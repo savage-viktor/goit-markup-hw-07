@@ -14,7 +14,6 @@
 
 .page-footer__logo {
   display: block;
-
   margin-bottom: 20px;
 }
 
@@ -48,7 +47,7 @@
   margin-top: 15px;
 }
 
-.follow-us-title {
+.follow-us__title {
   color: var(--color-white);
   margin-bottom: 20px;
 
@@ -60,15 +59,16 @@
   color: var(--color-white);
 }
 
-.follow-us .list {
+.follow-us__list {
   display: flex;
+  list-style: none;
 }
 
-.follow-us li:not(:last-child) {
+.follow-us__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.follow-us .icon {
+.follow-us__icon {
   display: block;
   width: 44px;
   height: 44px;
@@ -77,43 +77,13 @@
   fill: var(--color-white);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+  }
 }
 
-.follow-us .icon:hover,
-.follow-us .icon:focus {
-  background-color: var(--color-accent);
-}
-
-.follow-us.subscribe {
+.follow-us--positioned-right {
   margin-left: auto;
-}
-
-.form-subscribe {
-  display: flex;
-}
-
-.form-subscribe input {
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  padding-left: 15px;
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  margin-right: 12px;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.form-subscribe .submit-button {
-  display: flex;
-  align-items: center;
-  padding: 10px 28px;
-  background: var(--color-accent);
-}
-
-.icon-send {
-  fill: var(--color-white);
-  margin-left: 10px;
 }
