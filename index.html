@@ -71,10 +71,10 @@
       </section>
 
       <!-- Модальное окно -->
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop backdrop--is-hidden" data-modal>
         <div class="modal-window">
-          <button type="button" class="close" data-modal-close>
-            <svg width="11px" height="11px" class="icon-close">
+          <button type="button" class="modal-window__close" data-modal-close>
+            <svg width="11px" height="11px" class="modal-window__icon">
               <use href="./images/icons_sprite.svg#icon-close"></use>
             </svg>
           </button>
@@ -133,56 +133,56 @@
       <!-- Преимущества -->
       <section class="section">
         <div class="container">
-          <ul class="list feature">
+          <ul class="feature-list">
             <li class="feature-card">
-              <svg class="feature-icon" height="120px">
+              <svg class="feature-card__icon" height="120px">
                 <use
                   href="./images/icons_sprite.svg#icon-features-antenna"
                   width="70px"
                   height="70px"
                 ></use>
               </svg>
-              <h3 class="feature-title">Внимание к деталям</h3>
-              <p class="feature-discription">
+              <h3 class="feature-card__title">Внимание к деталям</h3>
+              <p class="feature-card__discription">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
             <li class="feature-card">
-              <svg class="feature-icon" height="120px">
+              <svg class="feature-card__icon" height="120px">
                 <use
                   href="./images/icons_sprite.svg#icon-features-clock"
                   width="70px"
                   height="70px"
                 ></use>
               </svg>
-              <h3 class="feature-title">Пунктуальность</h3>
-              <p class="feature-discription">
+              <h3 class="feature-card__title">Пунктуальность</h3>
+              <p class="feature-card__discription">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
             <li class="feature-card">
-              <svg class="feature-icon" height="120px">
+              <svg class="feature-card__icon" height="120px">
                 <use
                   href="./images/icons_sprite.svg#icon-features-diagram"
                   width="70px"
                   height="70px"
                 ></use>
               </svg>
-              <h3 class="feature-title">Планирование</h3>
-              <p class="feature-discription">
+              <h3 class="feature-card__title">Планирование</h3>
+              <p class="feature-card__discription">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
             <li class="feature-card">
-              <svg class="feature-icon" height="120px">
+              <svg class="feature-card__icon" height="120px">
                 <use
                   href="./images/icons_sprite.svg#icon-features-astronaut"
                   width="70px"
                   height="70px"
                 ></use>
               </svg>
-              <h3 class="feature-title">Современные технологии</h3>
-              <p class="feature-discription">
+              <h3 class="feature-card__title">Современные технологии</h3>
+              <p class="feature-card__discription">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -194,8 +194,8 @@
       <section class="section wedo">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li class="wedo-item">
+          <ul class="wedo__list">
+            <li class="wedo__item">
               <img
                 class="img-wedo"
                 src="./images/coding.jpg"
@@ -203,9 +203,9 @@
                 height="294"
                 alt="Написание кода"
               />
-              <h3 class="wedo-description">Десктопные приложения</h3>
+              <h3 class="wedo__description">Десктопные приложения</h3>
             </li>
-            <li class="wedo-item">
+            <li class="wedo__item">
               <img
                 class="img-wedo"
                 src="./images/uidesign.jpg"
@@ -213,9 +213,9 @@
                 height="294"
                 alt="Разработка пользовательских интерфейсов"
               />
-              <h3 class="wedo-description">Мобильные приложения</h3>
+              <h3 class="wedo__description">Мобильные приложения</h3>
             </li>
-            <li class="wedo-item">
+            <li class="wedo__item">
               <img
                 class="img-wedo"
                 src="./images/photodesign.jpg"
@@ -223,7 +223,7 @@
                 height="294"
                 alt="Дизайн"
               />
-              <h3 class="wedo-description">Дизайнерские решения</h3>
+              <h3 class="wedo__description">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -233,41 +233,41 @@
       <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list team">
+          <ul class="team__list">
             <li class="card-team">
               <img
                 src="./images/team_dem.jpg"
-                class="team-photo"
+                class="card-team__photo"
                 width="270"
                 height="260"
                 alt="фото сотрудника"
               />
-              <h3 class="team-title">Игорь Демьяненко</h3>
-              <p class="team-discription">Product Designer</p>
-              <ul class="list team-social">
-                <li>
-                  <a class="icon" href="">
+              <h3 class="card-team__title">Игорь Демьяненко</h3>
+              <p class="card-team__discription">Product Designer</p>
+              <ul class="card-team__social-list">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-linkedin"></use>
                     </svg>
@@ -278,37 +278,37 @@
             <li class="card-team">
               <img
                 src="./images/team_rep.jpg"
-                class="team-photo"
+                class="card-team__photo"
                 width="270"
                 height="260"
                 alt="фото сотрудника"
               />
-              <h3 class="team-title">Ольга Репина</h3>
-              <p class="team-discription">Frontend Developer</p>
-              <ul class="list team-social">
-                <li>
-                  <a class="icon" href="">
+              <h3 class="card-team__title">Ольга Репина</h3>
+              <p class="card-team__discription">Frontend Developer</p>
+              <ul class="card-team__social-list">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-linkedin"></use>
                     </svg>
@@ -319,37 +319,37 @@
             <li class="card-team">
               <img
                 src="./images/team_tar.jpg"
-                class="team-photo"
+                class="card-team__photo"
                 width="270"
                 height="260"
                 alt="фото сотрудника"
               />
-              <h3 class="team-title">Николай Тарасов</h3>
-              <p class="team-discription">Marketing</p>
-              <ul class="list team-social">
-                <li>
-                  <a class="icon" href="">
+              <h3 class="card-team__title">Николай Тарасов</h3>
+              <p class="card-team__discription">Marketing</p>
+              <ul class="card-team__social-list">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-linkedin"></use>
                     </svg>
@@ -360,37 +360,37 @@
             <li class="card-team">
               <img
                 src="./images/team_erm.jpg"
-                class="team-photo"
+                class="card-team__photo"
                 width="270"
                 height="260"
                 alt="фото сотрудника"
               />
-              <h3 class="team-title">Михаил Ермаков</h3>
-              <p class="team-discription">UI Designer</p>
-              <ul class="list team-social">
-                <li>
-                  <a class="icon" href="">
+              <h3 class="card-team__title">Михаил Ермаков</h3>
+              <p class="card-team__discription">UI Designer</p>
+              <ul class="card-team__social-list">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li>
-                  <a class="icon" href="">
+                <li class="card-team__social-item">
+                  <a class="card-team__social-link" href="">
                     <svg width="20px" height="20px">
                       <use href="./images/icons_sprite.svg#icon-linkedin"></use>
                     </svg>
@@ -406,44 +406,44 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list clients">
-            <li>
-              <a class="icon" href="">
+          <ul class="clients-list">
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
                 <svg width="41px" height="47px">
                   <use href="./images/icons_sprite.svg#icon-logo-company1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
                 <svg width="40px" height="52">
                   <use href="./images/icons_sprite.svg#icon-logo-company2"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
                 <svg width="43px" height="41px">
                   <use href="./images/icons_sprite.svg#icon-logo-company3"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
                 <svg width="84px" height="40px">
                   <use href="./images/icons_sprite.svg#icon-logo-company4"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
                 <svg width="62px" height="45px">
                   <use href="./images/icons_sprite.svg#icon-logo-company5"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a class="icon" href="">
+            <li class="clients-list__item">
+              <a class="clients-list__link" href="">
                 <svg width="94px" height="44px">
                   <use href="./images/icons_sprite.svg#icon-logo-company6"></use>
                 </svg>

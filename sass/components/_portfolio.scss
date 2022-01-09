@@ -1,61 +1,65 @@
-.buttons {
+.buttons-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  list-style: none;
 
   margin-bottom: 50px;
 }
 
-.buttons li:not(:last-child) {
+.buttons-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .portfolio-card {
   width: calc((100% - 60px) / 3);
 
   margin-bottom: 30px;
+
+  &:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
-.portfolio-card-link {
-  transition-duration: var(--effect-time);
-  transition-timing-function: var(--effect-function);
+.portfolio-card__link {
+  @extend %site-animation;
+
+  &:hover,
+  &:focus {
+    display: block;
+
+    box-shadow: 1px 4px 6px 0px #00000029;
+    box-shadow: 0px 4px 4px 0px #0000000f;
+    box-shadow: 0px 1px 1px 0px #0000001f;
+  }
+
+  &:hover .portfolio-card__about,
+  &:focus .portfolio-card__about {
+    transform: translate(0, 0);
+  }
 }
 
-.portfolio-card-link:hover,
-.portfolio-card-link:focus {
-  display: block;
-
-  box-shadow: 1px 4px 6px 0px #00000029;
-  box-shadow: 0px 4px 4px 0px #0000000f;
-  box-shadow: 0px 1px 1px 0px #0000001f;
-}
-
-.portfolio-card:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.portfolio-card:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
-
-.portfolio-image {
+.portfolio-card__image {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio-about {
+.portfolio-card__about {
   position: absolute;
   top: 0;
   transform: translate(0, 101%);
 
   transition-property: transform;
-  transition-duration: var(--effect-time);
-  transition-timing-function: var(--effect-function);
+  @extend %site-animation;
 
   display: flex;
   align-items: center;
@@ -72,12 +76,7 @@
   color: var(--color-white);
 }
 
-.portfolio-card-link:hover .portfolio-about,
-.portfolio-card-link:focus .portfolio-about {
-  transform: translate(0, 0);
-}
-
-.portfolio-text {
+.portfolio-card__text {
   padding: 20px 24px;
 
   border-right: 1px solid #eeeeee;
@@ -85,7 +84,7 @@
   border-left: 1px solid #eeeeee;
 }
 
-.portfolio-title {
+.portfolio-card__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -94,7 +93,7 @@
   letter-spacing: 0.06em;
 }
 
-.portfolio-description {
+.portfolio-card__description {
   color: var(--color-secondary-text);
   font-size: 16px;
   line-height: 1.87;

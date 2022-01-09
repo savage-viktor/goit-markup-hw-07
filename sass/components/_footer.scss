@@ -36,11 +36,11 @@
 
 .page-footer__contact-link {
   @extend %site-animation;
-}
 
-.page-footer__contact-link:hover,
-.page-footer__contact-link:focus {
-  color: var(--color-accent);
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
 }
 
 .follow-us {
@@ -69,6 +69,8 @@
 }
 
 .follow-us__icon {
+  @extend %site-animation;
+
   display: block;
   width: 44px;
   height: 44px;

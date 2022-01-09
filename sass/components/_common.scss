@@ -12,16 +12,6 @@ a {
   color: inherit;
 }
 
-.list {
-  list-style: none;
-}
-
-.link,
-.icon {
-  transition-duration: var(--effect-time);
-  transition-timing-function: var(--effect-function);
-}
-
 h1,
 h2,
 h3,
@@ -38,15 +28,23 @@ img {
   display: block;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 // aproved
 .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
 }
